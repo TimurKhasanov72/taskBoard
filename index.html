@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!-- Auto Generated with Sencha Architect -->
+<!-- Modifications to this file will be overwritten. -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>TaskBoard</title>
+
+	<script src="http://localhost:8080/public/ext66/build/ext-all-debug.js"></script>
+	<script src="http://localhost:8080/public/ext66/build/packages/charts/classic/charts-debug.js"></script>
+	<script src="http://localhost:8080/public/ext66/build/classic/theme-crisp/theme-crisp.js"></script>
+	<link rel="stylesheet" href="http://localhost:8080/public/ext66/build/packages/charts/classic/crisp/resources/charts-all-debug.css">
+	<link rel="stylesheet" href="http://localhost:8080/public/ext66/build/classic/theme-crisp/resources/theme-crisp-all.css">
+	<link rel="stylesheet" href="../resources/css/custom.css">
+	<script type="text/javascript" src="http://localhost:8080/rpc?javascript"></script>
+	<!--
+    <script src="http://dwork.loc/js/gantt/scheduler-5.1.14/sch-all-debug.js"></script>
+    <link rel="stylesheet" href="http://dwork.loc/js/gantt/scheduler-5.1.14/resources/css/sch-all.css">
+    <script type="text/javascript" src="http://localhost:8080/public/app.js"></script>-->
+
+	<script type="text/javascript" >
+        Ext.onReady(function () {
+            Ext.rpc.ExternalItems.getServerDate("Y-m-d H:i:s", function (response) {
+                console.log("CCCCC:" + response);
+            });
+        })
+	</script>
+</head>
+<body></body>
+</html>
